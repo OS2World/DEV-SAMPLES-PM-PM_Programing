@@ -1,0 +1,8 @@
+;-------------------------------------
+; SYSVALS3.DEF module definition file
+;-------------------------------------
+
+NAME           SYSVALS3  WINDOWAPI
+
+DESCRIPTION    'System Values Display No. 3 (c) Charles Petzold, 1993'
+PROTMODE

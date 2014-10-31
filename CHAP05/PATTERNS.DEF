@@ -1,0 +1,8 @@
+;-------------------------------------
+; PATTERNS.DEF module definition file
+;-------------------------------------
+
+NAME           PATTERNS  WINDOWAPI
+
+DESCRIPTION    'GPI Area Patterns (c) Charles Petzold, 1993'
+PROTMODE

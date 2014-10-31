@@ -1,0 +1,8 @@
+;-------------------------------------
+; CONVMENU.DEF module definition file
+;-------------------------------------
+
+NAME           CONVMENU  WINDOWAPI
+
+DESCRIPTION    'Conventional Menu Demo (c) Charles Petzold, 1993'
+PROTMODE

@@ -1,0 +1,8 @@
+;----------------------------------
+; CLOCK.DEF module definition file
+;----------------------------------
+
+NAME           CLOCK     WINDOWAPI
+
+DESCRIPTION    'Analog Clock (c) Charles Petzold, 1993'
+PROTMODE

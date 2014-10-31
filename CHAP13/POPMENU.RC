@@ -1,0 +1,47 @@
+/*----------------------------
+   POPMENU.RC resource script
+  ----------------------------*/
+
+#include <os2.h>
+#include "popmenu.h"
+
+MENU ID_RESOURCE
+     {
+     SUBMENU "~File",              -1
+          {
+          MENUITEM "~New",              IDM_NEW
+          MENUITEM "~Open",             IDM_OPEN
+          MENUITEM "~Save",             IDM_SAVE
+          MENUITEM "Save ~As",          IDM_SAVEAS
+          MENUITEM SEPARATOR
+          MENUITEM "A~bout PopMenu...", IDM_ABOUT
+          }
+     SUBMENU "~Edit",              -1
+          {
+          MENUITEM "Cu~t",              IDM_CUT
+          MENUITEM "~Copy",             IDM_COPY
+          MENUITEM "~Paste",            IDM_PASTE
+          MENUITEM "C~lear",            IDM_CLEAR
+          }
+     SUBMENU "~Options",           -1
+          {
+          SUBMENU "~Color",        -1
+               {
+               MENUITEM "~Red",         IDM_RED
+               MENUITEM "~Green",       IDM_GREEN
+               MENUITEM "~Blue",        IDM_BLUE
+               }
+          SUBMENU "~Size",         -1
+               {
+               MENUITEM "~Small",       IDM_SMALL
+               MENUITEM "~Medium",      IDM_MEDIUM
+               MENUITEM "~Large",       IDM_LARGE
+               }
+          SUBMENU "S~peed",        -1
+               {
+               MENUITEM "~Slow",        IDM_SLOW
+               MENUITEM "~Medium",      IDM_MEDSPEED
+               MENUITEM "~Fast",        IDM_FAST
+               }
+          }
+     }

@@ -1,0 +1,8 @@
+;-----------------------------------
+; CIRCLE.DEF module definition file
+;-----------------------------------
+
+NAME           CIRCLE    WINDOWAPI
+
+DESCRIPTION    'Transform Demonstration (c) Charles Petzold, 1993'
+PROTMODE

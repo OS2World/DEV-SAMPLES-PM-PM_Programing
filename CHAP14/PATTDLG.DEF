@@ -1,0 +1,10 @@
+;------------------------------------
+; PATTDLG.DEF module definition file
+;------------------------------------
+
+NAME           PATTDLG   WINDOWAPI
+
+DESCRIPTION    'Select GPI Pattterns from Dialog Box (c) Charles Petzold, 1993'
+PROTMODE
+
+

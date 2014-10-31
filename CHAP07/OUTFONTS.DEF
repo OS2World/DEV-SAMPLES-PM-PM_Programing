@@ -1,0 +1,8 @@
+;-------------------------------------
+; OUTFONTS.DEF module definition file
+;-------------------------------------
+
+NAME           OUTFONTS  WINDOWAPI
+
+DESCRIPTION    'Outline Fonts (c) Charles Petzold, 1993'
+PROTMODE

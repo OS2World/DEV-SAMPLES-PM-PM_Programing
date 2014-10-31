@@ -1,0 +1,8 @@
+;------------------------------------
+; OLFDEMO.DEF module definition file
+;------------------------------------
+
+NAME                          WINDOWAPI
+
+DESCRIPTION    'OS/2 Outline Fonts Demo (c) Charles Petzold, 1993'
+PROTMODE

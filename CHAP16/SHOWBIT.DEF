@@ -1,0 +1,10 @@
+;------------------------------------
+; SHOWBIT.DEF module definition file
+;------------------------------------
+
+NAME           SHOWBIT   WINDOWAPI
+
+DESCRIPTION    'Loads bitmap resources from BITLIB (c) Charles Petzold, 1993'
+PROTMODE
+
+

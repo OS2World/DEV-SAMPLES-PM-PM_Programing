@@ -1,0 +1,8 @@
+;------------------------------------
+; WELCOME.DEF module definition file
+;------------------------------------
+
+NAME           WELCOME   WINDOWAPI
+
+DESCRIPTION    'Welcome to PM -- Program No. 7 (c) Charles Petzold, 1993'
+PROTMODE

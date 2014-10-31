@@ -1,0 +1,8 @@
+;-----------------------------------
+; SKETCH.DEF module definition file
+;-----------------------------------
+
+NAME           SKETCH    WINDOWAPI
+
+DESCRIPTION    'Mouse Sketching Program (c) Charles Petzold, 1993'
+PROTMODE

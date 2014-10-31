@@ -1,0 +1,8 @@
+;------------------------------
+; W.DEF module definition file
+;------------------------------
+
+NAME           W         WINDOWCOMPAT
+
+DESCRIPTION    'Welcome to PM -- Program No. 1 (c) Charles Petzold, 1993'
+PROTMODE

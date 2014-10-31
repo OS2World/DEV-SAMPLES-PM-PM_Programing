@@ -1,0 +1,8 @@
+;------------------------------------
+; POEPOEM.DEF module definition file
+;------------------------------------
+
+NAME           POEPOEM   WINDOWAPI
+
+DESCRIPTION    'Programmer-Defined Resource (c) Charles Petzold, 1993'
+PROTMODE

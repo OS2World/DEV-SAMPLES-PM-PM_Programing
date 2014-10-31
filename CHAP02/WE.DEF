@@ -1,0 +1,8 @@
+;-------------------------------
+; WE.DEF module definition file
+;-------------------------------
+
+NAME           WE        WINDOWCOMPAT
+
+DESCRIPTION    'Welcome to PM -- Program No. 2 (c) Charles Petzold, 1993'
+PROTMODE

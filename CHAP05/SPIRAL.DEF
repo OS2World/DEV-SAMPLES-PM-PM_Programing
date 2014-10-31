@@ -1,0 +1,8 @@
+;-----------------------------------
+; SPIRAL.DEF module definition file
+;-----------------------------------
+
+NAME           SPIRAL    WINDOWAPI
+
+DESCRIPTION    'GPI Spiral Using a Polyline (c) Charles Petzold, 1993'
+PROTMODE

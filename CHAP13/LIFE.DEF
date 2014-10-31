@@ -1,0 +1,8 @@
+;---------------------------------
+; LIFE.DEF module definition file
+;---------------------------------
+
+NAME           LIFE      WINDOWAPI
+
+DESCRIPTION    'Game of Life Program (c) Charles Petzold, 1993'
+PROTMODE

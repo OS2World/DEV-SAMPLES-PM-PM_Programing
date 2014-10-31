@@ -1,0 +1,8 @@
+;-------------------------------------
+; RESOURCE.DEF module definition file
+;-------------------------------------
+
+NAME           RESOURCE  WINDOWAPI
+
+DESCRIPTION    'Icon and Pointer Resources (c) Charles Petzold, 1993'
+PROTMODE

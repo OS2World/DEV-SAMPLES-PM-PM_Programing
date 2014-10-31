@@ -1,0 +1,10 @@
+;-----------------------------------
+; ABOUT2.DEF module definition file
+;-----------------------------------
+
+NAME           ABOUT2    WINDOWAPI
+
+DESCRIPTION    'About Box with New Button (c) Charles Petzold, 1993'
+PROTMODE
+
+

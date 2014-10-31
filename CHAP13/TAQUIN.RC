@@ -1,0 +1,18 @@
+/*---------------------------
+   TAQUIN.RC resource script
+  ---------------------------*/
+
+#include <os2.h>
+#include "taquin.h"
+
+POINTER ID_RESOURCE taquin.ico
+
+MENU ID_RESOURCE
+     {
+     SUBMENU  "~Options",                         -1
+          {
+          MENUITEM "~Normal Reset",               IDM_NORMAL
+          MENUITEM "~Inverted Reset",             IDM_INVERT
+          MENUITEM "~Scramble",                   IDM_SCRAMBLE
+          }
+     }

@@ -1,0 +1,8 @@
+;------------------------------------
+; BIGJOB5.DEF module definition file
+;------------------------------------
+
+NAME           BIGJOB5   WINDOWAPI
+
+DESCRIPTION    'BigJob Program No. 5 (c) Charles Petzold, 1993'
+PROTMODE

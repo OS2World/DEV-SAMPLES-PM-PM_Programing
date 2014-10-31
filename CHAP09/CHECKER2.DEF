@@ -1,0 +1,8 @@
+;-------------------------------------
+; CHECKER2.DEF module definition file
+;-------------------------------------
+
+NAME           CHECKER2  WINDOWAPI
+
+DESCRIPTION    'Mouse Hit-Test Program No. 2 (c) Charles Petzold, 1993'
+PROTMODE

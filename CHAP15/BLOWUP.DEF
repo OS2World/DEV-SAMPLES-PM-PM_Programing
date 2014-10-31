@@ -1,0 +1,10 @@
+;-----------------------------------
+; BLOWUP.DEF module definition file
+;-----------------------------------
+
+NAME           BLOWUP         WINDOWAPI
+
+DESCRIPTION    'Bitmap Blowup Clipboard Program (c) Charles Petzold, 1993'
+PROTMODE
+
+

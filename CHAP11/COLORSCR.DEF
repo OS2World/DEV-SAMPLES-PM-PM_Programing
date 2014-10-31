@@ -1,0 +1,8 @@
+;-------------------------------------
+; COLORSCR.DEF module definition file
+;-------------------------------------
+
+NAME           COLORSCR  WINDOWAPI
+
+DESCRIPTION    'Color Scroll (c) Charles Petzold, 1993'
+PROTMODE

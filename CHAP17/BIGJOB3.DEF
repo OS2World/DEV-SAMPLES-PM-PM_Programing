@@ -1,0 +1,8 @@
+;------------------------------------
+; BIGJOB3.DEF module definition file
+;------------------------------------
+
+NAME           BIGJOB3   WINDOWAPI
+
+DESCRIPTION    'BigJob Program No. 3 (c) Charles Petzold, 1993'
+PROTMODE

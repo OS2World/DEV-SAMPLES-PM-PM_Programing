@@ -1,0 +1,8 @@
+;---------------------------------
+; WELC.DEF module definition file
+;---------------------------------
+
+NAME           WELC      WINDOWAPI
+
+DESCRIPTION    'Welcome to PM -- Program No. 4 (c) Charles Petzold, 1993'
+PROTMODE

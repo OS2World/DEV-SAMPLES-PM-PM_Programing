@@ -1,0 +1,10 @@
+;------------------------------------
+; MINMAX3.DEF module definition file
+;------------------------------------
+
+NAME           MINMAX3   WINDOWAPI
+
+DESCRIPTION    'Min-Max Bitmap (c) Charles Petzold, 1993'
+PROTMODE
+
+

@@ -1,0 +1,8 @@
+;-------------------------------------
+; BUTTONS2.DEF module definition file
+;-------------------------------------
+
+NAME           BUTTONS2  WINDOWAPI
+
+DESCRIPTION    'New Button Demo (c) Charles Petzold, 1993'
+PROTMODE

@@ -1,0 +1,10 @@
+;-----------------------------------
+; ABOUT1.DEF module definition file
+;-----------------------------------
+
+NAME           ABOUT1    WINDOWAPI
+
+DESCRIPTION    'Sample About Box Dialog Procedure (c) Charles Petzold, 1993'
+PROTMODE
+
+

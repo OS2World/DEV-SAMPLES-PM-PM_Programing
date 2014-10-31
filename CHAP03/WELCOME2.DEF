@@ -1,0 +1,10 @@
+;-------------------------------------
+; WELCOME2.DEF module definition file
+;-------------------------------------
+
+NAME           WELCOME2  WINDOWAPI
+
+DESCRIPTION    'Creates Two Top-Level Windows (c) Charles Petzold, 1993'
+PROTMODE
+
+

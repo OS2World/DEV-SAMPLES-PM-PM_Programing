@@ -1,0 +1,74 @@
+/*---------------------------------
+   PATTDLG.RC resource script file
+  ---------------------------------*/
+
+#include <os2.h>
+#include "pattdlg.h"
+
+MENU ID_RESOURCE
+     {
+     SUBMENU "~Select",            IDM_SELECT
+          {
+          MENUITEM "~Pattern and Color...",  IDM_PATTERNS
+          MENUITEM SEPARATOR
+          MENUITEM "A~bout...",              IDM_ABOUT
+          }
+     }
+
+DLGTEMPLATE IDD_ABOUT
+  {
+  DIALOG "", 0, 32, 32, 200, 88,, FCF_DLGBORDER
+    {
+    CTEXT "PattDlg"                             -1,  10, 64, 180,  8
+    CTEXT "Select Patterns from Dialog Box"     -1,  10, 40, 180,  8
+    CTEXT "Copyright (c) Charles Petzold, 1993" -1,  10, 32, 180,  8
+    DEFPUSHBUTTON "OK"                      DID_OK,  80,  8,  40, 16, WS_GROUP
+    }
+  }
+
+DLGTEMPLATE IDD_PATTERNS
+  {
+  DIALOG "", 0, 8, 8, 280, 194,, FCF_DLGBORDER
+    {
+    GROUPBOX      "Pattern"     -1,                8,  30, 128, 158
+    RADIOBUTTON   "Dense 1"     IDD_DENSE1 +  0,  12, 162,  56,  12, WS_GROUP
+    RADIOBUTTON   "Dense 2"     IDD_DENSE1 +  1,  12, 148,  56,  12
+    RADIOBUTTON   "Dense 3"     IDD_DENSE1 +  2,  12, 134,  56,  12
+    RADIOBUTTON   "Dense 4"     IDD_DENSE1 +  3,  12, 120,  56,  12
+    RADIOBUTTON   "Dense 5"     IDD_DENSE1 +  4,  12, 106,  56,  12
+    RADIOBUTTON   "Dense 6"     IDD_DENSE1 +  5,  12,  92,  56,  12
+    RADIOBUTTON   "Dense 7"     IDD_DENSE1 +  6,  12,  78,  56,  12
+    RADIOBUTTON   "Dense 8"     IDD_DENSE1 +  7,  12,  64,  56,  12
+    RADIOBUTTON   "Vert"        IDD_DENSE1 +  8,  12,  50,  56,  12
+    RADIOBUTTON   "Horiz"       IDD_DENSE1 +  9,  12,  36,  56,  12
+    RADIOBUTTON   "Diag 1"      IDD_DENSE1 + 10,  70, 162,  60,  12
+    RADIOBUTTON   "Diag 2"      IDD_DENSE1 + 11,  70, 148,  60,  12
+    RADIOBUTTON   "Diag 3"      IDD_DENSE1 + 12,  70, 134,  60,  12
+    RADIOBUTTON   "Diag 4"      IDD_DENSE1 + 13,  70, 120,  60,  12
+    RADIOBUTTON   "No Shade"    IDD_DENSE1 + 14,  70, 106,  60,  12
+    RADIOBUTTON   "Solid"       IDD_DENSE1 + 15,  70,  92,  60,  12
+    RADIOBUTTON   "Halftone"    IDD_DENSE1 + 16,  70,  78,  60,  12
+    RADIOBUTTON   "Hatch"       IDD_DENSE1 + 17,  70,  64,  60,  12
+    RADIOBUTTON   "Diag Hatch", IDD_DENSE1 + 18,  70,  50,  60,  12
+    GROUPBOX      "Color"       -1,              144,  58, 128, 130
+    RADIOBUTTON   "Backgrnd"    IDD_BKGRND +  0, 148, 162,  56,  12, WS_GROUP
+    RADIOBUTTON   "Blue"        IDD_BKGRND +  1, 148, 148,  56,  12
+    RADIOBUTTON   "Red"         IDD_BKGRND +  2, 148, 134,  56,  12
+    RADIOBUTTON   "Pink"        IDD_BKGRND +  3, 148, 120,  56,  12
+    RADIOBUTTON   "Green"       IDD_BKGRND +  4, 148, 106,  56,  12
+    RADIOBUTTON   "Cyan"        IDD_BKGRND +  5, 148,  92,  56,  12
+    RADIOBUTTON   "Yellow"      IDD_BKGRND +  6, 148,  78,  56,  12
+    RADIOBUTTON   "Neutral"     IDD_BKGRND +  7, 148,  64,  56,  12
+    RADIOBUTTON   "Dk Gray"     IDD_BKGRND +  8, 212, 162,  56,  12
+    RADIOBUTTON   "Dk Blue"     IDD_BKGRND +  9, 212, 148,  56,  12
+    RADIOBUTTON   "Dk Red"      IDD_BKGRND + 10, 212, 134,  56,  12
+    RADIOBUTTON   "Dk Pink"     IDD_BKGRND + 11, 212, 120,  56,  12
+    RADIOBUTTON   "Dk Green"    IDD_BKGRND + 12, 212, 106,  56,  12
+    RADIOBUTTON   "Dk Cyan"     IDD_BKGRND + 13, 212,  92,  56,  12
+    RADIOBUTTON   "Brown"       IDD_BKGRND + 14, 212,  78,  56,  12
+    RADIOBUTTON   "Pl Gray"     IDD_BKGRND + 15, 212,  64,  56,  12
+    AUTOCHECKBOX  "Border"      IDD_BORDER,      148,  30,  56,  12, WS_GROUP
+    DEFPUSHBUTTON "OK"          DID_OK,           66,   8,  52,  16, WS_GROUP
+    PUSHBUTTON    "Cancel"      DID_CANCEL,      162,   8,  52,  16, WS_GROUP
+    }
+  }

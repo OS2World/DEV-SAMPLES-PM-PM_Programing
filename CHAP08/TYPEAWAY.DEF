@@ -1,0 +1,8 @@
+;-------------------------------------
+; TYPEAWAY.DEF module definition file
+;-------------------------------------
+
+NAME           TYPEAWAY  WINDOWAPI
+
+DESCRIPTION    'Typing Program (c) Charles Petzold, 1993'
+PROTMODE

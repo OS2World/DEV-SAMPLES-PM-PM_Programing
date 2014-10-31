@@ -1,0 +1,8 @@
+;-------------------------------------
+; BUTTONS3.DEF module definition file
+;-------------------------------------
+
+NAME           BUTTONS3  WINDOWAPI
+
+DESCRIPTION    'New Button Demo with DLL (c) Charles Petzold, 1993'
+PROTMODE

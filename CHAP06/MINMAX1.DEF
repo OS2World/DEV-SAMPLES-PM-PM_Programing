@@ -1,0 +1,10 @@
+;------------------------------------
+; MINMAX1.DEF module definition file
+;------------------------------------
+
+NAME           MINMAX1   WINDOWAPI
+
+DESCRIPTION    'Bitblt of Min-Max Menu (c) Charles Petzold, 1993'
+PROTMODE
+
+

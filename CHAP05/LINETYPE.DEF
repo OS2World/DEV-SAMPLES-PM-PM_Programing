@@ -1,0 +1,8 @@
+;-------------------------------------
+; LINETYPE.DEF module definition file
+;-------------------------------------
+
+NAME           LINETYPE  WINDOWAPI
+
+DESCRIPTION    'GPI Line Types (c) Charles Petzold, 1993'
+PROTMODE

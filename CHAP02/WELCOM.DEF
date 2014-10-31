@@ -1,0 +1,8 @@
+;-----------------------------------
+; WELCOM.DEF module definition file
+;-----------------------------------
+
+NAME           WELCOM    WINDOWAPI
+
+DESCRIPTION    'Welcome to PM -- Program No. 6 (c) Charles Petzold, 1993'
+PROTMODE

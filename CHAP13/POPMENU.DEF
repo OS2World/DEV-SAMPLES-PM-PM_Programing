@@ -1,0 +1,8 @@
+;------------------------------------
+; POPMENU.DEF module definition file
+;------------------------------------
+
+NAME           POPMENU   WINDOWAPI
+
+DESCRIPTION    'Popup Menu (c) Charles Petzold, 1993'
+PROTMODE

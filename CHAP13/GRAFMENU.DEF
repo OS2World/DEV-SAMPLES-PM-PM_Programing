@@ -1,0 +1,8 @@
+;-------------------------------------
+; GRAFMENU.DEF module definition file
+;-------------------------------------
+
+NAME           GRAFMENU  WINDOWAPI
+
+DESCRIPTION    'Graphics Menu (c) Charles Petzold, 1993'
+PROTMODE

@@ -1,0 +1,8 @@
+;-------------------------------------
+; STARFILL.DEF module definition file
+;-------------------------------------
+
+NAME           STARFILL  WINDOWAPI
+
+DESCRIPTION    'Alternate and Winding Modes (c) Charles Petzold, 1993'
+PROTMODE

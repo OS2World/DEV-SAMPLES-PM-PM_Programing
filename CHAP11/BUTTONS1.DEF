@@ -1,0 +1,8 @@
+;-------------------------------------
+; BUTTONS1.DEF module definition file
+;-------------------------------------
+
+NAME           BUTTONS1  WINDOWAPI
+
+DESCRIPTION    'Push Button Demo (c) Charles Petzold, 1993'
+PROTMODE

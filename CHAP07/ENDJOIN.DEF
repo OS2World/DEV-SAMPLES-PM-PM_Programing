@@ -1,0 +1,8 @@
+;------------------------------------
+; ENDJOIN.DEF module definition file
+;------------------------------------
+
+NAME           ENDJOIN   WINDOWAPI
+
+DESCRIPTION    'Line Ends and Joins (c) Charles Petzold, 1993'
+PROTMODE

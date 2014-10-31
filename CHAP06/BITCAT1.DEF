@@ -1,0 +1,10 @@
+;------------------------------------
+; BITCAT1.DEF module definition file
+;------------------------------------
+
+NAME           BITCAT1   WINDOWAPI
+
+DESCRIPTION    'Bitmap Creation and Display (c) Charles Petzold, 1993'
+PROTMODE
+
+

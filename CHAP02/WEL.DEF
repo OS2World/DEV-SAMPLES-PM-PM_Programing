@@ -1,0 +1,8 @@
+;--------------------------------
+; WEL.DEF module definition file
+;--------------------------------
+
+NAME           WEL       WINDOWAPI
+
+DESCRIPTION    'Welcome to PM -- Program No. 3 (c) Charles Petzold, 1993'
+PROTMODE

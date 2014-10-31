@@ -1,0 +1,8 @@
+;----------------------------------
+; FONTS.DEF module definition file
+;----------------------------------
+
+NAME           FONTS     WINDOWAPI
+
+DESCRIPTION    'Displays GPI Image Fonts (c) Charles Petzold, 1993'
+PROTMODE

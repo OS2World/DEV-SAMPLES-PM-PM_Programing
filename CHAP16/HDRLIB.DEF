@@ -1,0 +1,13 @@
+;-----------------------------------
+; HDRLIB.DEF module definition file
+;-----------------------------------
+
+LIBRARY        HDRLIB    INITINSTANCE
+
+DESCRIPTION    'Handy Drawing Routines DLL (c) Charles Petzold, 1993'
+PROTMODE
+DATA           NONSHARED
+
+EXPORTS        HdrPuts
+               HdrPrintf
+               HdrEllipse

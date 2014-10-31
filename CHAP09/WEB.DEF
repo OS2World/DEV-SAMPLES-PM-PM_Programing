@@ -1,0 +1,8 @@
+;--------------------------------
+; WEB.DEF module definition file
+;--------------------------------
+
+NAME           WEB  WINDOWAPI
+
+DESCRIPTION    'Mouse Movement Demo Program (c) Charles Petzold, 1993'
+PROTMODE

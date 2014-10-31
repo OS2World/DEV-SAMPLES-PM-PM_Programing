@@ -1,0 +1,11 @@
+;-----------------------------------
+; NEWBTN.DEF module definition file
+;-----------------------------------
+
+LIBRARY        NEWBTN    INITINSTANCE
+
+DESCRIPTION    'New Button Dynamic Link Library (c) Charles Petzold, 1993'
+PROTMODE
+DATA           NONSHARED
+
+EXPORTS        RegisterNewBtnClass

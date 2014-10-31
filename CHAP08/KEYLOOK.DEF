@@ -1,0 +1,8 @@
+;------------------------------------
+; KEYLOOK.DEF module definition file
+;------------------------------------
+
+NAME           KEYLOOK   WINDOWAPI
+
+DESCRIPTION    'Key Look Program (c) Charles Petzold, 1993'
+PROTMODE

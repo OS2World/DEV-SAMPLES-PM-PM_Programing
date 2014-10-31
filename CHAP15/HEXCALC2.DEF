@@ -1,0 +1,8 @@
+;-------------------------------------
+; HEXCALC2.DEF module definition file
+;-------------------------------------
+
+NAME           HEXCALC2  WINDOWAPI
+
+DESCRIPTION    'Hexadecimal Calculator With Clipboard (C) Charles Petzold 1993'
+PROTMODE

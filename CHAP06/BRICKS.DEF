@@ -1,0 +1,10 @@
+;-----------------------------------
+; BRICKS.DEF module definition file
+;-----------------------------------
+
+NAME           BRICKS    WINDOWAPI
+
+DESCRIPTION    'Customized Pattern from Bitmap (c) Charles Petzold, 1988'
+PROTMODE
+
+

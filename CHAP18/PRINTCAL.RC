@@ -1,0 +1,68 @@
+/*-----------------------------
+   PRINTCAL.RC resource script
+  -----------------------------*/
+
+#include <os2.h>
+#include "printcal.h"
+
+MENU ID_RESOURCE
+     {
+     SUBMENU "~Calendar",                    -1
+          {
+          MENUITEM "~Print Calendar...",     IDM_PRINT
+          MENUITEM SEPARATOR
+          MENUITEM "A~bout PrintCal...",     IDM_ABOUT
+          }
+     }
+
+DLGTEMPLATE IDD_PRINT
+  {
+  DIALOG "Print Calendar", 0, 16, 16, 160, 220,, FCF_DLGBORDER | FCF_TITLEBAR
+    {
+    LTEXT   "Year (1900-2099):"  -1,                 8, 200, 80,   8,
+    EDITTEXT        ""           IDD_YEAR,          92, 200, 24,   8, ES_MARGIN
+
+    GROUPBOX        "Begin"      -1,                 8,  30, 68, 160
+    AUTORADIOBUTTON "January"    IDD_MONTHBEG +  0, 12, 168, 60,  12, WS_GROUP
+    AUTORADIOBUTTON "February"   IDD_MONTHBEG +  1, 12, 156, 60,  12
+    AUTORADIOBUTTON "March"      IDD_MONTHBEG +  2, 12, 144, 60,  12
+    AUTORADIOBUTTON "April"      IDD_MONTHBEG +  3, 12, 132, 60,  12
+    AUTORADIOBUTTON "May"        IDD_MONTHBEG +  4, 12, 120, 60,  12
+    AUTORADIOBUTTON "June"       IDD_MONTHBEG +  5, 12, 108, 60,  12
+    AUTORADIOBUTTON "July"       IDD_MONTHBEG +  6, 12,  96, 60,  12
+    AUTORADIOBUTTON "August"     IDD_MONTHBEG +  7, 12,  84, 60,  12
+    AUTORADIOBUTTON "September"  IDD_MONTHBEG +  8, 12,  72, 60,  12
+    AUTORADIOBUTTON "October"    IDD_MONTHBEG +  9, 12,  60, 60,  12
+    AUTORADIOBUTTON "November"   IDD_MONTHBEG + 10, 12,  48, 60,  12
+    AUTORADIOBUTTON "December"   IDD_MONTHBEG + 11, 12,  36, 60,  12
+
+    GROUPBOX        "End"        -1,                84,  30, 68, 160
+    AUTORADIOBUTTON "January"    IDD_MONTHEND +  0, 88, 168, 60,  12, WS_GROUP
+    AUTORADIOBUTTON "February"   IDD_MONTHEND +  1, 88, 156, 60,  12
+    AUTORADIOBUTTON "March"      IDD_MONTHEND +  2, 88, 144, 60,  12
+    AUTORADIOBUTTON "April"      IDD_MONTHEND +  3, 88, 132, 60,  12
+    AUTORADIOBUTTON "May"        IDD_MONTHEND +  4, 88, 120, 60,  12
+    AUTORADIOBUTTON "June"       IDD_MONTHEND +  5, 88, 108, 60,  12
+    AUTORADIOBUTTON "July"       IDD_MONTHEND +  6, 88,  96, 60,  12
+    AUTORADIOBUTTON "August"     IDD_MONTHEND +  7, 88,  84, 60,  12
+    AUTORADIOBUTTON "September"  IDD_MONTHEND +  8, 88,  72, 60,  12
+    AUTORADIOBUTTON "October"    IDD_MONTHEND +  9, 88,  60, 60,  12
+    AUTORADIOBUTTON "November"   IDD_MONTHEND + 10, 88,  48, 60,  12
+    AUTORADIOBUTTON "December"   IDD_MONTHEND + 11, 88,  36, 60,  12
+
+    DEFPUSHBUTTON   "Print"      DID_OK,             8,   8, 40,  16, WS_GROUP
+    PUSHBUTTON      "Preview"    IDD_PREVIEW,       61,   8, 40,  16
+    PUSHBUTTON      "Cancel"     DID_CANCEL,       114,   8, 40,  16
+    }
+  }
+
+DLGTEMPLATE IDD_ABOUT
+  {
+  DIALOG "", 0, 32, 32, 200, 88,, FCF_DLGBORDER
+    {
+    CTEXT "PrintCal"                            -1, 10, 64, 180,  8
+    CTEXT "Calendar Printing Program"           -1, 10, 48, 180,  8
+    CTEXT "Copyright (c) Charles Petzold, 1993" -1, 10, 32, 180,  8
+    DEFPUSHBUTTON "OK"                      DID_OK, 80,  8,  40, 16, WS_GROUP
+    }
+  }

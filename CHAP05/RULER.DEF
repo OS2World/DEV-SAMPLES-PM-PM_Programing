@@ -1,0 +1,8 @@
+;----------------------------------
+; RULER.DEF module definition file
+;----------------------------------
+
+NAME           RULER     WINDOWAPI
+
+DESCRIPTION    'Draw a Ruler (c) Charles Petzold, 1993'
+PROTMODE

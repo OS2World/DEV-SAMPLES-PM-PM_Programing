@@ -1,0 +1,8 @@
+;-------------------------------------
+; CHECKER1.DEF module definition file
+;-------------------------------------
+
+NAME           CHECKER1  WINDOWAPI
+
+DESCRIPTION    'Mouse Hit-Test Program No. 1 (c) Charles Petzold, 1993'
+PROTMODE

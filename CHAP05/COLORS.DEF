@@ -1,0 +1,8 @@
+;-----------------------------------
+; COLORS.DEF module definition file
+;-----------------------------------
+
+NAME           COLORS    WINDOWAPI
+
+DESCRIPTION    'GPI Foreground Colors (c) Charles Petzold, 1993'
+PROTMODE

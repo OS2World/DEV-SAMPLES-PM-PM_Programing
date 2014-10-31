@@ -1,0 +1,8 @@
+;-------------------------------------
+; SYSVALS1.DEF module definition file
+;-------------------------------------
+
+NAME           SYSVALS1  WINDOWAPI
+
+DESCRIPTION    'System Values Display No. 1 (c) Charles Petzold, 1993'
+PROTMODE

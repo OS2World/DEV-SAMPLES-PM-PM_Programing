@@ -1,0 +1,8 @@
+;------------------------------------
+; DEVCAPS.DEF module definition file
+;------------------------------------
+
+NAME           DEVCAPS   WINDOWAPI
+
+DESCRIPTION    'Device Capabilities (c) Charles Petzold, 1993'
+PROTMODE

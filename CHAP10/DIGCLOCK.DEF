@@ -1,0 +1,8 @@
+;-------------------------------------
+; DIGCLOCK.DEF module definition file
+;-------------------------------------
+
+NAME           DIGCLOCK  WINDOWAPI
+
+DESCRIPTION    'Digital Clock (c) Charles Petzold, 1993'
+PROTMODE

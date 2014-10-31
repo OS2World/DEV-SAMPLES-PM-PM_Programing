@@ -1,0 +1,10 @@
+;-------------------------------------
+; HELLOBIT.DEF module definition file
+;-------------------------------------
+
+NAME           HELLOBIT  WINDOWAPI
+
+DESCRIPTION    'Hello, world Bitmap (c) Charles Petzold, 1993'
+PROTMODE
+
+

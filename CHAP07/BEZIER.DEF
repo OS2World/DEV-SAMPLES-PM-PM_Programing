@@ -1,0 +1,8 @@
+;-----------------------------------
+; BEZIER.DEF module definition file
+;-----------------------------------
+
+NAME           BEZIER    WINDOWAPI
+
+DESCRIPTION    'Bezier Splines (c) Charles Petzold, 1993'
+PROTMODE

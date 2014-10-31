@@ -1,0 +1,10 @@
+;---------------------------------
+; HEAD.DEF module definition file
+;---------------------------------
+
+NAME           HEAD      WINDOWAPI
+
+DESCRIPTION    'Displays File Head (c) Charles Petzold, 1993'
+PROTMODE
+
+

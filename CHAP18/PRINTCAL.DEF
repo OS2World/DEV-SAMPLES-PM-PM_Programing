@@ -1,0 +1,8 @@
+;-------------------------------------
+; PRINTCAL.DEF module definition file
+;-------------------------------------
+
+NAME           PRINTCAL  WINDOWAPI
+
+DESCRIPTION    'Prints monthly calendar (c) 1993, Charles Petzold'
+PROTMODE

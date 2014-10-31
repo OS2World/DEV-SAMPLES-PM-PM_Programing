@@ -1,0 +1,8 @@
+;-----------------------------------
+; TAQUIN.DEF module definition file
+;-----------------------------------
+
+NAME           TAQUIN    WINDOWAPI
+
+DESCRIPTION    'Jeu de Taquin (c) Charles Petzold, 1993'
+PROTMODE

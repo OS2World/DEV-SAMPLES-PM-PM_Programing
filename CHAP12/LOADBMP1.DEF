@@ -1,0 +1,8 @@
+;-------------------------------------
+; LOADBMP1.DEF module definition file
+;-------------------------------------
+
+NAME           LOADBMP1  WINDOWAPI
+
+DESCRIPTION    'Loads Bitmap Resource and Draws it (c) Charles Petzold, 1993'
+PROTMODE

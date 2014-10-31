@@ -1,0 +1,8 @@
+;----------------------------------
+; WELCO.DEF module definition file
+;----------------------------------
+
+NAME           WELCO     WINDOWAPI
+
+DESCRIPTION    'Welcome to PM -- Program No. 5 (c) Charles Petzold, 1993'
+PROTMODE

@@ -1,0 +1,8 @@
+;-----------------------------------
+; FLOWER.DEF module definition file
+;-----------------------------------
+
+NAME           FLOWER    WINDOWAPI
+
+DESCRIPTION    'Transform Demonstration (c) Charles Petzold, 1993'
+PROTMODE

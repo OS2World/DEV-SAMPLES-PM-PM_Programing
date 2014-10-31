@@ -1,0 +1,10 @@
+;-------------------------------------
+; WELCOME3.DEF module definition file
+;-------------------------------------
+
+NAME           WELCOME3  WINDOWAPI
+
+DESCRIPTION    'Creates Top-Level and Two Children (c) Charles Petzold, 1993'
+PROTMODE
+
+

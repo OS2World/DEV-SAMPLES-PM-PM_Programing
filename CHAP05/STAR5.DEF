@@ -1,0 +1,8 @@
+;----------------------------------
+; STAR5.DEF module definition file
+;----------------------------------
+
+NAME           STAR5     WINDOWAPI
+
+DESCRIPTION    'Draws 5-Pointed Star (c) Charles Petzold, 1993'
+PROTMODE

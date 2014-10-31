@@ -1,0 +1,10 @@
+;-------------------------------------
+; WELCOME4.DEF module definition file
+;-------------------------------------
+
+NAME           WELCOME4  WINDOWAPI
+
+DESCRIPTION    'Creates Top-Level and 3 Children (c) Charles Petzold, 1993'
+PROTMODE
+
+

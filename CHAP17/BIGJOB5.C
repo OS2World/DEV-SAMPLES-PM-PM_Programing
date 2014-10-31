@@ -1,0 +1,144 @@
+/*--------------------------------------------------
+   BIGJOB5.C -- Second thread and semaphore trigger
+                (c) Charles Petzold, 1993
+ ---------------------------------------------------*/
+
+#define INCL_DOS
+#define INCL_WIN
+#include <os2.h>
+#include <process.h>
+#include <stdlib.h>
+#include "bigjob.h"
+
+VOID CalcThread (PVOID) ;
+
+int main (void)
+     {
+     return MainCode ("BigJob5", "BigJob5 - Second Thread with Semaphore") ;
+     }
+
+MRESULT EXPENTRY ClientWndProc (HWND hwnd, ULONG msg, MPARAM mp1, MPARAM mp2)
+     {
+     static CALCPARAM cp ;
+     static HWND      hwndMenu ;
+     static int       tidCalc ;
+     static INT       iCurrentRep = IDM_10 ;
+     static INT       iStatus = STATUS_READY ;
+     static LONG      lRepAmts [] = { 10, 100, 1000, 10000, 100000 } ;
+     static ULONG     ulElapsedTime ;
+
+     switch (msg)
+          {
+          case WM_CREATE:
+               hwndMenu = WinWindowFromID (
+                               WinQueryWindow (hwnd, QW_PARENT),
+                               FID_MENU) ;
+
+               cp.hwnd = hwnd ;
+
+               DosCreateEventSem (NULL, &cp.hevTrigger, 0L, FALSE) ;
+
+               tidCalc = _beginthread (CalcThread,
+#ifdef __IBMC__
+                                       NULL,
+#endif
+                                       STACKSIZE, &cp) ;
+               return 0 ;
+
+          case WM_INITMENU:
+               if (tidCalc == -1 && SHORT1FROMMP (mp1) == IDM_ACTION)
+                    WinEnableMenuItem (hwnd, IDM_START, FALSE) ;
+               return 0 ;
+
+          case WM_COMMAND:
+               switch (COMMANDMSG(&msg)->cmd)
+                    {
+                    case IDM_10:
+                    case IDM_100:
+                    case IDM_1000:
+                    case IDM_10000:
+                    case IDM_100000:
+                         WinCheckMenuItem (hwndMenu, iCurrentRep, FALSE) ;
+                         iCurrentRep = COMMANDMSG(&msg)->cmd ;
+                         WinCheckMenuItem (hwndMenu, iCurrentRep, TRUE) ;
+                         return 0 ;
+
+                    case IDM_START:
+                         cp.lCalcRep = lRepAmts [iCurrentRep - IDM_10] ;
+                         cp.fContinueCalc = TRUE ;
+                         DosPostEventSem (cp.hevTrigger) ;
+
+                         iStatus = STATUS_WORKING ;
+                         WinInvalidateRect (hwnd, NULL, FALSE) ;
+                         WinEnableMenuItem (hwndMenu, IDM_START, FALSE) ;
+                         WinEnableMenuItem (hwndMenu, IDM_ABORT, TRUE) ;
+                         return 0 ;
+
+                    case IDM_ABORT:
+                         cp.fContinueCalc = FALSE ;
+                         WinEnableMenuItem (hwndMenu, IDM_ABORT, FALSE) ;
+                         return 0 ;
+                    }
+               break ;
+
+          case WM_CALC_DONE:
+               iStatus = STATUS_DONE ;
+               ulElapsedTime = LONGFROMMP (mp1) ;
+               WinInvalidateRect (hwnd, NULL, FALSE) ;
+               WinEnableMenuItem (hwndMenu, IDM_START, TRUE) ;
+               WinEnableMenuItem (hwndMenu, IDM_ABORT, FALSE) ;
+               return 0 ;
+
+          case WM_CALC_ABORTED:
+               iStatus = STATUS_READY ;
+               WinInvalidateRect (hwnd, NULL, FALSE) ;
+               WinEnableMenuItem (hwndMenu, IDM_START, TRUE) ;
+               return 0 ;
+
+          case WM_PAINT:
+               PaintWindow (hwnd, iStatus, cp.lCalcRep, ulElapsedTime) ;
+               return 0 ;
+
+          case WM_DESTROY:
+               if (iStatus == STATUS_WORKING)
+                    DosKillThread (tidCalc) ;
+               return 0 ;
+          }
+     return WinDefWindowProc (hwnd, msg, mp1, mp2) ;
+     }
+
+VOID CalcThread (PVOID pArg)
+     {
+     double     A ;
+     HAB        hab ;
+     LONG       lRep, lTime ;
+     PCALCPARAM pcp ;
+     ULONG      ulPostCount ;
+
+     hab = WinInitialize (0) ;
+     pcp = (PCALCPARAM) pArg ;
+
+     while (TRUE)
+          {
+          DosWaitEventSem (pcp->hevTrigger, SEM_INDEFINITE_WAIT) ;
+
+          lTime = WinGetCurrentTime (hab) ;
+
+          for (A = 1.0, lRep = 0 ; lRep < pcp->lCalcRep &&
+                                   pcp->fContinueCalc ; lRep++)
+               A = Savage (A) ;
+
+          DosResetEventSem (pcp->hevTrigger, &ulPostCount) ;
+
+          if (pcp->fContinueCalc)
+               {
+               lTime = WinGetCurrentTime (hab) - lTime ;
+               WinPostMsg (pcp->hwnd, WM_CALC_DONE, MPFROMLONG (lTime), NULL) ;
+               }
+          else
+               WinPostMsg (pcp->hwnd, WM_CALC_ABORTED, NULL, NULL) ;
+          }
+
+     WinTerminate (hab) ;
+     _endthread () ;
+     }

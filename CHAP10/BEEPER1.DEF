@@ -1,0 +1,8 @@
+;------------------------------------
+; BEEPER1.DEF module definition file
+;------------------------------------
+
+NAME           BEEPER1   WINDOWAPI
+
+DESCRIPTION    'Timer Demo Program No. 1 (c) Charles Petzold, 1993'
+PROTMODE

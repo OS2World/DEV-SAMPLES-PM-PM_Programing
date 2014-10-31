@@ -1,0 +1,49 @@
+/*----------------------------------
+   CONVMENU.RC resource script file
+  ----------------------------------*/
+
+#include <os2.h>
+#include "convmenu.h"
+
+MENU ID_RESOURCE
+     {
+     SUBMENU "~File",              IDM_FILE
+          {
+          MENUITEM "~New",                   IDM_NEW
+          MENUITEM "~Open...",               IDM_OPEN
+          MENUITEM "~Save\tShift+F3",        IDM_SAVE
+          MENUITEM "Save ~As...",            IDM_SAVEAS
+          MENUITEM SEPARATOR
+          MENUITEM "E~xit\tF3",              IDM_EXIT
+          }
+     SUBMENU "~Timer",             IDM_TIMER
+          {
+          MENUITEM "~Start",                 IDM_START
+          MENUITEM "S~top",                  IDM_STOP,,  MIA_DISABLED
+          }
+     SUBMENU "~Background",        IDM_BACKGROUND
+          {
+          MENUITEM "~White\tCtrl+W",         IDM_WHITE,, MIA_CHECKED
+          MENUITEM "~Light Gray\tCtrl+L",    IDM_LTGRAY
+          MENUITEM "~Gray\tCtrl+G",          IDM_GRAY
+          MENUITEM "~Dark Gray\tCtrl+D",     IDM_DKGRAY
+          MENUITEM "~Black\tCtrl+B",         IDM_BLACK
+          }
+     SUBMENU "~Help",              IDM_TOPHELP
+          {
+          MENUITEM "~Help...",               IDM_HELP, MIS_HELP
+          MENUITEM SEPARATOR
+          MENUITEM "~About...",              IDM_ABOUT
+          }
+     }
+
+ACCELTABLE ID_RESOURCE
+     {
+     VK_F3, IDM_SAVE,   VIRTUALKEY, SHIFT
+     VK_F3, IDM_EXIT,   VIRTUALKEY
+     "w",   IDM_WHITE,  CONTROL
+     "l",   IDM_LTGRAY, CONTROL
+     "g",   IDM_GRAY,   CONTROL
+     "d",   IDM_DKGRAY, CONTROL
+     "b",   IDM_BLACK,  CONTROL
+     }

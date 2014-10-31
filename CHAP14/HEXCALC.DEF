@@ -1,0 +1,10 @@
+;--------------------------------
+; HEXCALC module definition file
+;--------------------------------
+
+NAME           HEXCALC   WINDOWAPI
+
+DESCRIPTION    'Hexadecimal Calculator (C) Charles Petzold 1988'
+PROTMODE
+
+
